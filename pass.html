@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="pass.css">
+    <link rel="stylesheet" href="pass.js">
+    
+</head>
+<body  class="main-container">
+    
+    <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-md-12">
+    <h1 class="main-heading">Password Generator</h1>
+    <label class="plb" for="length">Password Length:</label>
+    <input type="number" id="length" min="4" max="50" value="12">
+    <br>
+
+    <label class="lb1">Include:</label>
+    <input type="checkbox" id="letters" checked> <label for="letters">Letters</label>
+    <input type="checkbox" id="numbers" checked> <label for="numbers">Numbers</label>
+    <input type="checkbox" id="symbols" checked> <label for="symbols">Symbols</label>
+
+    <br>
+
+    <button class="btn btn-outline-warning generate-password" onclick="generatePassword()">Generate Password</button>
+
+
+
+    <div id="password-output"></div>
+
+</div>
+</div>
+</div>
+
+
+
+
+    <script src="pass.js"></script>
+</body>
+</html>
