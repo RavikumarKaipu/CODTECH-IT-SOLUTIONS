@@ -1,2 +1,4 @@
 # CODTECH-IT-SOLUTIONS
-Password Generator
+1.Password Generator
+2.Adventure Game
+3.Quiz Application
